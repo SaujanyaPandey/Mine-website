@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Delights Bakery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f1e3;
+            color: #2c2c54;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffda79;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #2c2c54;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            color: #ff793f;
+        }
+
+        .content {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .item {
+            background-color: #ffda79;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            width: 250px;
+        }
+
+        .item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #ff793f;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .feedback-form {
+            background-color: #ffeaa7;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+        .feedback-form input,
+        .feedback-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .feedback-form button {
+            background-color: #ff793f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .feedback-form button:hover {
+            background-color: #ff4757;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sweet Delights Bakery</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="content">
+    <div class="item">
+        <img src="https://via.placeholder.com/250" alt="Cupcake">
+        <h3>Vanilla Cupcake</h3>
+        <p>Ingredients: Flour, sugar, eggs, butter, vanilla.</p>
+        <p>Price: $2.50</p>
+    </div>
+
+    <div class="item">
+        <img src="https://via.placeholder.com/250" alt="Brownie">
+        <h3>Chocolate Brownie</h3>
+        <p>Ingredients: Chocolate, butter, sugar, flour, eggs.</p>
+        <p>Price: $3.00</p>
+    </div>
+
+    <div class="item">
+        <img src="https://via.placeholder.com/250" alt="Croissant">
+        <h3>Croissant</h3>
+        <p>Ingredients: Flour, butter, sugar, yeast.</p>
+        <p>Price: $2.00</p>
+    </div>
+</div>
+
+<div class="feedback-form">
+    <h2>Customer Feedback</h2>
+    <form id="feedback-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Feedback" rows="4" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<footer>
+    <p>© 2024 Sweet Delights Bakery. All rights reserved.</p>
+</footer>
+
+<script>
+    document.getElementById('feedback-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Thank you for your feedback!');
+        this.reset();
+    });
+</script>
+
+</body>
+</html>
